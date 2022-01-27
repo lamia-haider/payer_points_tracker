@@ -5,7 +5,7 @@
 
 # Initial Steps
 
-1. Download the project either by cloning the project from this github repository: https://github.com/lamia-haider/payer_points_tracker
+1. Download the project by cloning the project from this github repository: https://github.com/lamia-haider/payer_points_tracker
 2. In your code editor of choice navigate to the project directory
 3. In your terminal run the command `npm install`
 4. In your terminal run the command `npm run start`
@@ -16,11 +16,11 @@ _NOTE_: The tests for the API calls can be run by running `npm run test` in your
 # Endpoints
 
 ## GET the balance of all payer points
-
+&nbsp;
 Route for Postman:
-
+&nbsp;
 `GET` `http://localhost:8080/points/balance`
-
+&nbsp;
 Example response:
 
 ```
@@ -34,21 +34,22 @@ Example response:
 ## POST/ADD a payer and the corresponding points
 
 Route for Postman:
+&nbsp;
 `POST` `http://localhost:8080/points/add`
-
+&nbsp;
 This route enables the addition of a new payer and their corresponding points, or if the payer already exists it updates their points. The response will be the updated array of payer objects.
 
 Make sure Postman POST request settings have the Body enabled as 'raw', with a JSON format:
-
+&nbsp;
 ![alt text](https://github.com/lamia-haider/payer_points_tracker/blob/main/readmeimg.png?raw=true)
-
+&nbsp;
 Example request:
 
 ```
 { "payer": "DANNON", "points": 1000, "timestamp": "2020-11-02T14:00:00Z" }
 
 ```
-
+&nbsp;
 Example response:
 
 ```
@@ -65,12 +66,13 @@ Example response:
     }
 ]
 ```
-
+&nbsp;
 ## POST/SPEND Route
 
 Route for Postman:
+&nbsp;
 `POST` `http://localhost:8080/points/spend`
-
+&nbsp;
 When a user spends points there are two rules for determining what points to "spend" first:
 
 - We want the oldest points to be spent first (oldest based on transaction timestamp, not the order they’re received)
@@ -80,14 +82,14 @@ When a user spends points there are two rules for determining what points to "sp
 Make sure Postman POST request settings have the Body enabled as 'raw', with a JSON format:
 ![alt text](https://github.com/lamia-haider/payer_points_tracker/blob/main/readmeimg.png?raw=true)
 
-
+&nbsp;
 Example request:
 
 ```
 { "points": 5000 }
 
 ```
-
+&nbsp;
 Example response:
 
 ```

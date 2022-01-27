@@ -5,7 +5,7 @@
 
 # Initial Steps
 
-1. Download the project either by cloning the project from this github repository:
+1. Download the project either by cloning the project from this github repository: https://github.com/lamia-haider/payer_points_tracker
 2. In your code editor of choice navigate to the project directory
 3. In your terminal run the command `npm install`
 4. In your terminal run the command `npm run start`

@@ -39,7 +39,8 @@ Route for Postman:
 This route enables the addition of a new payer and their corresponding points, or if the payer already exists it updates their points. The response will be the updated array of payer objects.
 
 Make sure Postman POST request settings have the Body enabled as 'raw', with a JSON format:
-[IMAGE HERE]
+
+![alt text](https://github.com/lamia-haider/payer_points_tracker/blob/main/readmeimg.png?raw=true)
 
 Example request:
 
@@ -77,7 +78,8 @@ When a user spends points there are two rules for determining what points to "sp
   The request for this call will be the number of points to spend, and the response will be an array showing which payers were used to spend the points.
 
 Make sure Postman POST request settings have the Body enabled as 'raw', with a JSON format:
-[IMAGE HERE]
+![alt text](https://github.com/lamia-haider/payer_points_tracker/blob/main/readmeimg.png?raw=true)
+
 
 Example request:
 

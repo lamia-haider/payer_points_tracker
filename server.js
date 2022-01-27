@@ -14,3 +14,5 @@ app.post("/points/add", controllers.addTransaction);
 app.listen(PORT, () => {
   console.log(`Server listening at localhost:${PORT}`);
 });
+
+// "test": "node --experimental-vm-modules node_modules/.bin/jest --coverage"
